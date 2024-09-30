@@ -1,0 +1,82 @@
+body {
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.App {
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+button {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.task.completed {
+  background-color: #d4edda;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.task button {
+  background-color: #007bff;
+}
+
+.task button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+  }
+}
