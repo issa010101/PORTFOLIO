@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "auto",
+    "noEmit": true,
+    "jsx": "react-jsx",  // Ajout pour React support
+    
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src/**/*", "vite.config.ts"]  // Ajout des fichiers source
+}
